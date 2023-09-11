@@ -17,6 +17,15 @@ For this example, we will create a simple spring boot project and add the spring
     docker run -p 6379:6379 redis:6.0.17-alpine
 
     docker run --name my-redis -p 6379:6379 -d redis
+
+ # Swagger
+
+ http://localhost:9001/swagger-ui/index.html#/redis-controller/sendDataToRedisQueue
+
+ curl -X 'GET' \
+  'http://localhost:9001/redis?redis=mensaje%20de%20prueba' \
+  -H 'accept: */*'
+
     
 
 # POM.xml
