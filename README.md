@@ -10,6 +10,15 @@ For this example, we will create a simple spring boot project and add the spring
 
     Install Redis and Start Redis Server(https://redis.io/download)
 
+    https://medium.com/idomongodb/installing-redis-server-using-docker-container-453c3cfffbdf
+    
+    docker pull redis:6.0.17-alpine
+    
+    docker run -p 6379:6379 redis:6.0.17-alpine
+
+    docker run --name my-redis -p 6379:6379 -d redis
+    
+
 # POM.xml
     You need to add this Redis client Jedis dependency or else your app might result in an error and won’t start. 
     This is because this a version mismatch between spring boot starter packs and the Redis itself
